@@ -1,12 +1,12 @@
 (function() {
 // Initialize Firebase
 const config = {
-    apiKey: "AIzaSyAtSswEBoMSKEmTCLYqtyshjlRbD8Ij5RU",
-    authDomain: "red-social-ux.firebaseapp.com",
-    databaseURL: "https://red-social-ux.firebaseio.com",
-    projectId: "red-social-ux",
-    storageBucket: "red-social-ux.appspot.com",
-    messagingSenderId: "517777747889"
+    apiKey: "AIzaSyB90dz8cu4Yk3lfkAcryi4B8PWM8lIlP8A",
+    authDomain: "ux-community.firebaseapp.com",
+    databaseURL: "https://ux-community.firebaseio.com",
+    projectId: "ux-community",
+    storageBucket: "ux-community.appspot.com",
+    messagingSenderId: "1069742951667"
 };
 firebase.initializeApp(config);
 console.log('estas dentro del firebase');    
