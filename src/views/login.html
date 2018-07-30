@@ -36,9 +36,9 @@
       <p class="center-align col s5 log-text">Tu nombre:</p>
       <input class="col s9 offset-s2 in-log validate">
       <p class="center-align col s7 log-text">Tu correo electrónico:</p>
-      <input class="col s9 offset-s2 in-log validate">
+      <input class="col s9 offset-s2 in-log validate"id="email" type="email" placeholder="Email" required="">
       <p class="center-align col s6 log-text">Tu contraseña:</p>
-      <input class="col s9 offset-s2 in-log validate">
+      <input class="col s9 offset-s2 in-log validate"id="password" type="password" placeholder="Password" required="">
       <p class="center-align col s10 offset-s1 check">
         <label>
           <input type="radio" />
@@ -47,29 +47,23 @@
       </p>
       <div class="center-align col s12">
         <p>Si ya tienes cuenta
-          <button class="bbtn waves-effect waves-light">inicia sesión.</button>
+          <button class="bbtn waves-effect waves-light" id="btnLogin">inicia sesión.</button>
+          
         </p>
       </div>
-      <button class="col s10 offset-s1 btn-reg waves-effect waves-light">Registrarme</button>
+      <button class="col s10 offset-s1 btn-reg waves-effect waves-light"id="btnSign">Registrarme</button>
     </div>
   </main>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+  <!--Initialize Firebase-->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyB90dz8cu4Yk3lfkAcryi4B8PWM8lIlP8A",
-      authDomain: "ux-community.firebaseapp.com",
-      databaseURL: "https://ux-community.firebaseio.com",
-      projectId: "ux-community",
-      storageBucket: "ux-community.appspot.com",
-      messagingSenderId: "1069742951667"
-    };
-    firebase.initializeApp(config);
-
-  </script>
+   <script src="../js/credenciales.js"></script>
   <script src="../js/login.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/app.js"></script>
+ 
 
 </body>
 

@@ -1,4 +1,5 @@
 //Creando Login con Google
+console.log("google activo");
 var provider = new firebase.auth.GoogleAuthProvider();
 
 $('#login-google').click(function () {
@@ -33,7 +34,4 @@ let saveData = (user) => {
     .set(usuaria)
 }
 
-//Pasando de Login a Profile
-// document.getElementById("login-google").addEventListener("click", signIn = () => {
-//     window.location.assign("https://marfloresrayon.github.io/cdmx-2018-06-bc-core-am-social-network/src/views/profile.html")
-// });
+

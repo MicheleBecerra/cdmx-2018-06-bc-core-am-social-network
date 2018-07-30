@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,6 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="../css/profile-style.css">
-  <!-- Firestore-->
-  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 </head>
 
 <body>
@@ -111,15 +108,16 @@
     <!--Inicio img y likes-->
     <div class="row">
       <div class="col s8 offset-s2">
-        <section>
-        <textarea  id="myTextarea" cols="30" rows="10"></textarea>
-        <button id="botonCompartir" class="col s4 offset-s8 btnCompartir">Compartir</button>
-      </section> 
-      
-      <section>
+        <form>
+        <textarea  id="mensajes" cols="30" rows="10"></textarea>
+        <button   id="botonCompartir" class="col s4 offset-s8 btnCompartir">Compartir</button>
+        <button  id="delete-comment" class="col s4 offset-s8 btnCompartir">Eliminar</button>
+        <button  id="edit-comment" class="col s4 offset-s8 btnCompartir">Editar</button>
+        
+        
       <p>Soy un comentario sobre María</p>
-      <p id="lista"></p>
-    </section>
+      <div id="printComments"></div>
+    </form>
     </div>
   </div>
     <!--Fin img y likes-->
@@ -132,9 +130,11 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-
   <script src="../js/profile.js"></script>
-  <script src="../js/wall.js"></script>
+  <script src="../js/credenciales.js"></script>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
+
+
