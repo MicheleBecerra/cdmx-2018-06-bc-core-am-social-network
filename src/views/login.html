@@ -8,62 +8,62 @@
   <link rel="stylesheet" href="../css/login-style.css" />
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand:700" rel="stylesheet">
-  <title>UX-COM</title>
+  <link href="https://fonts.googleapis.com/css?family=Neuton|Work+Sans" rel="stylesheet">
+  <title> UX-COM </title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <header class="row font-text">
-      <div id="auth-login" class="col s12">
-        <p class="center-align marg-top col s10 offset-s1">Forma parte de la comunidad</p>
-        <img class="responsive-img col s8 offset-s2" src="../images/LogoPaleta/logouxcom.png" alt="Logo-UX-COM">
+    <header class="row font-text-purple">
+      <div id="auth-login" class="col s12 m12">
+        <p class="center-align marg-top col s10 offset-s1 m12">Forma parte de la comunidad</p>
+        <img class="responsive-img col s8 offset-s2 m6 offset-m3" src="../images/LogoPaleta/logouxcom.png" alt="Logo-UX-COM">
       </div>
     </header>
   </div>
   <main class="row font-text">
-    <div id="photo"></div>
-    <div id="data"></div>
-    <div id="data2"></div>
+    <!--Impresión de información de la usuaria-->
+    <div>
+      <div id="photo"></div>
+      <div id="data"></div>
+      <div id="data2"></div>
+    </div>
+    <!--Login con Google-->
     <div id="auth-login2" class="col s12">
-      <p class="center-align col s8">Regístrate con tu cuenta de:</p>
-      <button id="login-google" class="waves-effect waves-light btng col s10 offset-s1" type="submit">Google</button>
+      <p class="center-align col s9 offset-s1 m6 offset-m3">Regístrate con tu cuenta de:</p>
+      <button id="login-google" class="waves-effect waves-light btng col s6 offset-s3 col m6 offset-m3" type="submit">Google</button>
+      <button id="login-twitter" class="marg-top-s btnt waves-effect waves-light col s6 offset-s3 col m6 offset-m3" type="submit">Twitter</button>
+    </div>
+    <!--Inicio de sesión manual con correo y contraseña-->
+    <div class="col s12 m12">
       <p class="center-align col s12 m12 l12">o
         <br> Ingresa tus datos
         <br> manualmente</p>
-      <p class="center-align col s5 log-text">Tu nombre:</p>
-      <input class="col s9 offset-s2 in-log validate">
-      <p class="center-align col s7 log-text">Tu correo electrónico:</p>
-      <input class="col s9 offset-s2 in-log validate"id="email" type="email" placeholder="Email" required="">
-      <p class="center-align col s6 log-text">Tu contraseña:</p>
-      <input class="col s9 offset-s2 in-log validate"id="password" type="password" placeholder="Password" required="">
-      <p class="center-align col s10 offset-s1 check">
-        <label>
-          <input type="radio" />
-          <span>Confirmo ser mujer mayor de 18 años</span>
-        </label>
-      </p>
-      <div class="center-align col s12">
-        <p>Si ya tienes cuenta
-          <button class="bbtn waves-effect waves-light" id="btnLogin">inicia sesión.</button>
-          
-        </p>
-      </div>
-      <button class="col s10 offset-s1 btn-reg waves-effect waves-light"id="btnSign">Registrarme</button>
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" placeholder="Ingresa tu nombre">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail" type="email" required="">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña" type="password"
+        required="">
+      <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnLogin">Iniciar sesión</button>
+    </div>
+    <!--Inicio de sesión con código enviado a número de celular-->
+    <div class="col s12 marg-top-s">
+      <p class="center-align col s12">Si lo prefieres <br> recibe un código <br> en tu celular</p>
+      <input type="text" class="col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="num-cel" placeholder="Tu número de celular" value="+521">
+      <button class=" col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btNum">Enviar código</button>
+      <div id="recaptcha-container" class="marg-top-s center-align col s9 offset-s1 col m6 offset-m3"></div>
+      <input type="text" class="marg-top-s col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="sentCode" placeholder="Tu código">
+      <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btCode">Iniciar sesión</button>
     </div>
   </main>
-  
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <!--Initialize Firebase-->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-   <script src="../js/credenciales.js"></script>
-  <script src="../js/login.js"></script>
+  <script src="../js/credenciales.js"></script>
   <script src="../js/index.js"></script>
-  <script src="../js/app.js"></script>
- 
+  <script src="../js/login.js"></script>
+
 
 </body>
 

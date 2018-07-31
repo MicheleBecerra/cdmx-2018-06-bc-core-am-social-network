@@ -37,8 +37,10 @@ signUp.addEventListener("click", e =>{
     const email= txtEmail.value;
     const password = txtPassword.value;
     const auth = firebase.auth();
+
     alert("Registro exitoso, Bienvenida!");
     window.location.assign("https://marfloresrayon.github.io/cdmx-2018-06-bc-core-am-social-network/src/views/profile.html")
+
 
 //mandamos los valores de email y password como parámetros al método createUserEmailAndPassword
     const promise = auth.createUserWithEmailAndPassword(email, password);

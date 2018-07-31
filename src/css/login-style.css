@@ -1,14 +1,34 @@
+.font-title{
+    font-family:'Neuton', Serif;
+    font-Size: 20px;
+}
+
 .font-text{
-    font-family: 'Quicksand Bold', sans-serif;
+    font-family: 'Work Sans', Sans-Serif;
+    font-size: 16px;
+    color: #333333;
+}
+
+.font-text-purple{
+    font-family: 'Work Sans', Sans-Serif;
+    font-size: 16px;
+    color: #5a0f89;
 }
 
 .marg-top{
     margin-top: 4em;
-    font-size: 1.1em;
+}
+
+.marg-top-s{
+    margin-top: 1em;
+}
+
+.marg-top-xs{
+    margin-top: 0.5em;
 }
 
 .btng{
-    background-color: #dd4b39;
+    background-color: #4285f4;
     color: white;
     text-align: center;
     padding: .5em !important;
@@ -16,8 +36,18 @@
     border: none;
 }
 
+.btnt{
+    background-color: white;
+    color: #006dbf;
+    text-align: center;
+    padding: .5em !important;
+    border-radius: 10px;
+    border: solid;
+    border-color: #006dbf;
+}
+
 .in-log{
-    margin-left: 12% !important;
+    /* margin-left: 12% !important; */
     border: 1px solid !important;
     border-radius: 8px !important;
 }
@@ -30,10 +60,10 @@
 }
 
 .btn-reg{
-    background-color: #45a2e0;
+    background-color: #893662;
     color: white;
     border: none;
     padding: .5em !important;
     border-radius: 10px;
-
 }
+

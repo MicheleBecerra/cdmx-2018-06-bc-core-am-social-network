@@ -1,4 +1,13 @@
 /*-----Clases generales---------*/
+.font-title{
+    font-family:'Neuton', Serif;
+    font-Size: 18px;
+}
+
+.font-text{
+    font-family: 'Work Sans', Sans-Serif;
+    font-Size: 12px;
+}
 
 body{
     height: 100%;

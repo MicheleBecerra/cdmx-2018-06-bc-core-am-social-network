@@ -39,7 +39,6 @@ parte de una comunidad activa y visible dentro del mundo tech.
 
 Diseñamos la interfaz como una experiencia intuitiva, creamos una página web fácil de 
 explorar, permitiendo que el contenido sobresalga.
-A cada sección le asignamos color en especial para hacerlas de fácil identificación. 
 La paleta de colores elegida gira en torno a la idea de femineidad tecnológica, 
 creativa e innovadora. 
 Usando una tipografía _____ para los títulos y una ________ para el texto, creamos 
@@ -162,6 +161,8 @@ debido a su éxito, uso y crecimiento continuo:
 ## :art: Logo y paleta de colores
 
 ![LogIn UX-COM](/src/images/LogoPaleta/logouxcom.png)
+
+![Paleta de colores](/src/images/LogoPaleta/paleta-colores.png)
 
 ## :iphone: Mockup
 ![LogIn UX-COM](/src/images/Mockup/ruxcom.png)
