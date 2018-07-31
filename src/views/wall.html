@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> UX-COM </title>
+  <link rel="stylesheet" href="../css/login-style.css">
   <link rel="stylesheet" href="../css/profile-style.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
@@ -23,7 +25,7 @@
             <img class="logoNav" src="../images/Web/LOGO_UX-COMmini.png" alt="logo-uxcom">
           </a>
 
-          <span class="col m1 hide-on-large-only">
+          <span class="col s1 hide-on-large-only">
             <a data-target="slide-out" class="cazul sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
@@ -35,63 +37,95 @@
     <!--Inicio NavBar Mobile-->
 
 
-    <!--SideBar-->
+    <!--SideBar Mobile-->
     <ul id="slide-out" class="sidenav">
       <li>
         <div class="user-view">
           <div class="background">
             <img src="../images/Web/fondoSideNav.jpg" alt="fondo-sidenav">
           </div>
-          <a href="#user">
             <img class="circle" src="../images/Web/avatar.png" alt="foto-perfil">
-          </a>
-          <a href="#name">
             <span class="white-text name">María Gutierrez</span>
-          </a>
-          <a href="#email">
             <span class="white-text email">mariagutierrez@gmail.com</span>
-          </a>
         </div>
       </li>
       <li>
-        <a class="waves-effect" href="#!">
+        <a class="waves-effect" href="profile.html">
           <i class="material-icons">perm_identity</i>Perfil</a>
       </li>
       <li>
-        <a class="waves-effect">
+        <a class="waves-effect" href="wall.html">
           <i class="material-icons">web_asset</i>Muro</a>
       </li>
       <li>
         <div class="divider"></div>
       </li>
       <li>
-        <a class="waves-effect">
+        <a class="waves-effect" href="login.html" id="logout">
           <i class="material-icons">settings_power</i>Cerrar cesión</a>
       </li>
     </ul>
-    <!--Fin SideBar-->
+    <!--Fin SideBar Mobile-->
 
+    <!--Inicio NavBar Desktop-->
+    <nav class="navDesktop hide-on-small-only">
+      <div class="nav-wrapper">
+        <a class="brand-logo center">
+          <img class="logoNavDesktop" src="../images/Web/LOGO_UX-COMmini.png" alt="logo-uxcom">
+        </a>
+        <ul class="left hide-on-med-and-down">
+          <li>
+            <a href="login.html">Cerrar cesión</a>
+          </li>
+          <li>
+            <a href="wall.html">Muro</a>
+          </li>
+          <li>
+            <a href="profile.html">Perfil</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Inicio NavBar Desktop-->
   </header>
 
   <!--Inicio Proyectos de usuaria-->
-    <main class="container-fluid">    
+  <main class="container-fluid">
     <!--Inicio img y likes-->
     <div class="row">
-        <div class="col s8 offset-s2">
-          <img class="responsive-img" src="../images/Web/proyectoUsuaria4.png" alt="">
-        </div>
+      <div class="col s6 offset-s3 m5 offset-m1">
+        <img class="marg-top responsive-img" src="../images/Web/proyectoUsuaria4.png" alt="proyecto de usuaria">
       </div>
-      <!--Fin img y likes-->
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-  
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="../js/profile.js"></script>
-    <script src="../js/credenciales.js"></script>
-    <script src="../js/app.js"></script>
-  </body>
-  
-  </html>
-  
+    </div>
+    <div class="row">
+    <div class="col s6 offset-s3 m5 offset-m1">
+      <img class="marg-top responsive-img" src="../images/Web/proyectoUsuaria2.png" alt="Proyecto de usuaria">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col s6 offset-s3 m5 offset-m1">
+      <img class="marg-top responsive-img" src="../images/Web/proyectoUsuaria3.png" alt="Proyecto de usuaria">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col s6 offset-s3 m5 offset-m1">
+      <img class="marg-top responsive-img" src="../images/Web/proyectoUsuaria.png" alt="Proyecto de usuaria">
+    </div>
+    </div>
+    <!--Fin img y likes-->
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="../js/profile.js"></script>
+  <script src="../js/wall.js"></script>
+</body>
+
+</html>

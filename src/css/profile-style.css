@@ -72,6 +72,32 @@ body{
 }
 /*----Fin Nav Bar Mobile--*/
 
+/*--Inicio NavBar Desktop--*/
+.navDesktop{
+    background-color: #ffffff;
+    color: #5A0F89 !important;
+}
+
+nav ul a {
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    font-size: 1rem;
+    color: #5A0F89 !important;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+nav a {
+    color: #5A0F89;
+}
+.logoNavDesktop{
+    width: 33%;
+}
+
+
+/*--Fin NavBar Desktop--*/
+
 
 /*----Inicio tarjeta de Usuaria--*/
 .tarjetaUsuaria{

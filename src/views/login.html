@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/login-style.css" />
+  <link rel="stylesheet" href="../css/login-style.css">
+  <link rel="stylesheet" href="../css/profile-style.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Neuton|Work+Sans" rel="stylesheet">
@@ -30,9 +31,8 @@
     </div>
     <!--Login con Google-->
     <div id="auth-login2" class="col s12">
-      <p class="center-align col s9 offset-s1 m6 offset-m3">Regístrate con tu cuenta de:</p>
+      <p class="center-align col s10 offset-s1 m6 offset-m3">Regístrate con tu cuenta de:</p>
       <button id="login-google" class="waves-effect waves-light btng col s6 offset-s3 col m6 offset-m3" type="submit">Google</button>
-      <button id="login-twitter" class="marg-top-s btnt waves-effect waves-light col s6 offset-s3 col m6 offset-m3" type="submit">Twitter</button>
     </div>
     <!--Inicio de sesión manual con correo y contraseña-->
     <div class="col s12 m12">
@@ -40,17 +40,21 @@
         <br> Ingresa tus datos
         <br> manualmente</p>
       <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" placeholder="Ingresa tu nombre">
-      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail" type="email" required="">
-      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña" type="password"
-        required="">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="email" placeholder="Ingresa tu e-mail"
+        type="email" required="">
+      <input class="col s10 offset-s1 col m6 offset-m3 in-log validate center-align" id="password" placeholder="Ingresa tu contraseña"
+        type="password" required="">
       <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btnLogin">Iniciar sesión</button>
     </div>
     <!--Inicio de sesión con código enviado a número de celular-->
     <div class="col s12 marg-top-s">
-      <p class="center-align col s12">Si lo prefieres <br> recibe un código <br> en tu celular</p>
-      <input type="text" class="col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="num-cel" placeholder="Tu número de celular" value="+521">
+      <p class="center-align col s12">Si lo prefieres
+        <br> recibe un código
+        <br> en tu celular</p>
+      <input type="text" class="col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="num-cel" placeholder="Tu número de celular"
+        value="+521">
       <button class=" col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btNum">Enviar código</button>
-      <div id="recaptcha-container" class="marg-top-s center-align col s9 offset-s1 col m6 offset-m3"></div>
+      <div id="recaptcha-container" class="marg-top-s center-align col s10 offset-s1 col m6 offset-m3"></div>
       <input type="text" class="marg-top-s col s6 offset-s3 col m6 offset-m3 in-log validate center-align" id="sentCode" placeholder="Tu código">
       <button class="marg-top-s col s6 offset-s3 col m6 offset-m3 btn-reg waves-effect waves-light" id="btCode">Iniciar sesión</button>
     </div>
@@ -63,6 +67,8 @@
   <script src="../js/credenciales.js"></script>
   <script src="../js/index.js"></script>
   <script src="../js/login.js"></script>
+  <script src="../js/profile.js"></script>
+  <script src="../js/wall.js"></script>
 
 
 </body>

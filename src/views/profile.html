@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Neuton|Work+Sans" rel="stylesheet">
-   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
 </head>
 
 <body>
@@ -25,7 +25,7 @@
             <img class="logoNav" src="../images/Web/LOGO_UX-COMmini.png" alt="logo-uxcom">
           </a>
 
-          <span class="col m1 hide-on-large-only">
+          <span class="col s1 hide-on-large-only">
             <a data-target="slide-out" class="cazul sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
@@ -37,7 +37,7 @@
     <!--Inicio NavBar Mobile-->
 
 
-    <!--SideBar-->
+    <!--SideBar Mobile-->
     <ul id="slide-out" class="sidenav">
       <li>
         <div class="user-view">
@@ -56,58 +56,67 @@
         </div>
       </li>
       <li>
-        <a class="waves-effect" href="#!">
+        <a class="waves-effect" href="profile.html">
           <i class="material-icons">perm_identity</i>Perfil</a>
       </li>
       <li>
-        <a class="waves-effect">
+        <a class="waves-effect" href="wall.html">
           <i class="material-icons">web_asset</i>Muro</a>
       </li>
       <li>
         <div class="divider"></div>
       </li>
       <li>
-        <a class="waves-effect">
+        <a class="waves-effect" href="login.html">
           <i class="material-icons">settings_power</i>Cerrar cesión</a>
       </li>
     </ul>
-    <!--Fin SideBar-->
+    <!--Fin SideBar Mobile-->
 
+    <!--Inicio NavBar Desktop-->
+    <nav class="navDesktop hide-on-small-only">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">
+          <img class="logoNavDesktop" src="../images/Web/LOGO_UX-COMmini.png" alt="logo-uxcom">
+        </a>
+        <ul class="left hide-on-med-and-down">
+          <li>
+            <a href="login.html">Cerrar cesión</a>
+          </li>
+          <li>
+            <a href="wall.html">Muro</a>
+          </li>
+          <li>
+            <a href="profile.html">Perfil</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Inicio NavBar Desktop-->
   </header>
 
-  <main class="container-fluid">
+  <main class="center-align container-fluid">
     <!--Inicio Tarjeta de usuaria-->
     <div class="row tarjetaUsuaria ">
-      <div class="col s4 offset-s4">
+      <div class="col s6 offset-s3 m6 offset-m3">
         <img class="circle responsive-img" src="../images/Web/avatar.png" alt="Foto-usuaria">
       </div>
-      <div class="row ">
-        <span class=" col s4 offset-s4">
+      <div class="row">
+        <span class="col s6 offset-s3 m6 offset-m3">
           María Gutiérrez
         </span>
       </div>
       <div class="row ">
-        <span class="col s6 offset-s3">
+        <span class="col s6 offset-s3 m6 offset-m3">
           mariagutierrez@gmail.com
         </span>
       </div>
     </div>
     <!--Fin Tarjeta de usuaria-->
 
-    <!--Inicio Proyectos de usuaria-->
+   
 
-    <!--Inicio img y likes-->
-    <div class="row">
-      <div class="col s8 offset-s2">
-        <img class="responsive-img" src="../images/Web/proyectoUsuaria4.png" alt="">
-      </div>
-      <div class="row">
-        <span class="col s3 offset-s2">
-          <i class="material-icons">favorite</i> 104</span>
-      </div>
-    </div>
-    <!--Fin img y likes-->
- 
+
     <!--Inicio img y likes-->
     <div class="container">
       <p>
@@ -143,31 +152,38 @@
     <!--div class="row">
       <div class="col s8 offset-s2">
         <form>
-        <textarea  id="comentario" cols="30" rows="10" placeholder="Que estas pensando?"></textarea>
-        <button   id="botonCompartir" class="col s4 offset-s8 btnCompartir" onclick="compartir()">Compartir</button>
-        
-        
-        
-      <p>Soy un comentario sobre María</p>
-      <div id="printComments"></div>
-    </form>
+          <textarea id="comentario" cols="30" rows="10" placeholder="Que estas pensando?"></textarea>
+          <button id="boton" class="col s4 offset-s8 btnCompartir" onclick="publicar()">Compartir</button>
+          
+
+
+          <p>Soy un comentario sobre María</p>
+          <section>
+            <div id="publicacion"></div>
+          </section>
+        </form>
+      </div>
     </div>
   </div-->
     <!--Fin img y likes-->
 
-    <!--Fin Proyectos de usuaria-->
+    
 
   </main>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <!-- <script src="../js/index.js"></script>
+  <script src="../js/login.js"></script> -->
   <script src="../js/profile.js"></script>
-  <script src="../js/profile-comment.js"></script>
+  <script src="../js/wall.js"></script>
 </body>
 
 </html>
-
-

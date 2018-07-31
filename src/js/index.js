@@ -1,4 +1,3 @@
-
 console.log("firebase activo");
 //Introducir los metodos del DOM
 const txtEmail = document.getElementById("email");
@@ -46,7 +45,7 @@ signUp.addEventListener("click", e =>{
     const promise = auth.createUserWithEmailAndPassword(email, password);
     promise.catch(e => console.log(e.message));
 
-  
+    
     // logout.addEventListener("click", h =>{
     //   firebase.auth().signOut();
     // });
